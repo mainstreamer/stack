@@ -1,0 +1,1 @@
+{"rsync":{"/vagrant":{"type":"rsync","rsyn_exclude":".git/","guestpath":"/vagrant","hostpath":"/Users/slight/Projects/drupal-custom","disabled":false,"__vagrantfile":true,"owner":"ubuntu","group":"ubuntu"}}}
