@@ -1,11 +1,11 @@
 # drupal-vagrant
 # Vagrant virtual machine with clean Drupal 8.x inside
 
->### VM specs:
-> Ubuntu 16.04
-> PHP 7
-> Mysql 5.7
-> Drupal
+### VM specs:
+Ubuntu 16.04
+PHP 7
+Mysql 5.7
+Drupal
 
 mysql user root 
 mysql pass root
