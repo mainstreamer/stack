@@ -19,7 +19,17 @@ requirements:
 ### installation:
 * clone repo
 * cd into project folder and create new empty drupal 8.x project:
-    composer create-project drupal-composer/drupal-project:8.x-dev . --stability dev --no-interaction
+
+composer create-project drupal-composer/drupal-project:8.x-dev . --stability dev --no-interaction
+> ## This is a header.
+> 
+> 1.   This is the first list item.
+> 2.   This is the second list item.
+> 
+> Here's some example code:
+> 
+>     return shell_exec("echo $input | $markdown_script");
+
      
 * create environment
  < vagrant up >
