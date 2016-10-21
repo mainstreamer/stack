@@ -12,14 +12,9 @@ mysql pass root
 localhost:8888
 
 requirements:
-1. vagrant
-2. virtual box
-3. composer
-
-### installation:
-* clone repo
-* cd into project folder and create new empty drupal 8.x project:
-
+* vagrant
+* virtual box
+* composer
 
 > ## Installation:
 > 
