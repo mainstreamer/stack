@@ -24,24 +24,21 @@ requirements:
 > ## Installation:
 > 
 >1)   clone repo
+>
 >2)   cd into project folder and create new empty drupal 8.x project:
 > 
 >     composer create-project drupal-composer/drupal-project:8.x-dev . --stability dev --no-interaction
-> 3)   create environment
-> 
->&nbsp; 
+>3)   create environment:
 > 
 >     vagrant up
-
+>4)   ssh into your virtual machine:
+> 
+>     vagrant ssh
+>5)   run bootstrap script:
+> 
+>     cd /vagrant
+>     ./bootstrap-vm.sh
      
-* create environment
- < vagrant up >
-4. ssh into your virtual machine
- < vagrant ssh >
-5. run bootstrap script 
- < cd /vagrant >
- < ./bootstrap-vm.sh >
-
 
 That's it, now go to localhost:8888 on your host machine
    &
