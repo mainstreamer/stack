@@ -17,9 +17,9 @@ requirements:
 3. composer
 
 ### installation:
-1. clone repo
-2. cd into project folder and create new empty drupal 8.x project
- < composer create-project drupal-composer/drupal-project:8.x-dev . --stability dev --no-interaction>
+*  clone repo
+*  cd into project folder and create new empty drupal 8.x project
+     < composer create-project drupal-composer/drupal-project:8.x-dev . --stability dev --no-interaction>
 3. create environment
  < vagrant up >
 4. ssh into your virtual machine
