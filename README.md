@@ -1,6 +1,6 @@
 # stack
 
-* Preinstalled
+### Preinstalled
 - ubuntu 16.04
 - php7.0
 - unison
