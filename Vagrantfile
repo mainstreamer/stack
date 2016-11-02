@@ -28,12 +28,12 @@ Vagrant.configure("2") do |config|
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
-  # config.vm.network "private_network", ip: "192.168.33.10"
+  config.vm.network "private_network", ip: "192.168.33.10"
 
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
   # your network.
-  # config.vm.network "public_network"
+  # config.vm.network "public_network", type: "dhcp"
 
   # Share an additional folder to the guest VM. The first argument is
   # the path on the host to the actual folder. The second argument is
@@ -62,7 +62,7 @@ Vagrant.configure("2") do |config|
   # config.push.define "atlas" do |push|
   #   push.app = "YOUR_ATLAS_USERNAME/YOUR_APPLICATION_NAME"
   # end
-  config.vm.synced_folder ".", "/vagrant", type: "rsync",
+  config.vm.synced_folder ".", "/vagrant", type: "nfs",
   #rsync__exclude: ".git/ safeUploads/ code/psr0/ code/web/library livedatabase.sql",
   rsyn_exclude: ".git/"
   #rsync__auto: true
@@ -87,6 +87,7 @@ Vagrant.configure("2") do |config|
    sudo apt install -y php7.0 php7.0-gd php7.0-mysql php7.0-xml php7.0-mbstring php7.0-zip
    sudo apt install -y composer
    sudo apt install -y libapache2-mod-php7.0 # for mbstring ext
+   sudo apt install -y nfs-kernel-server
    #sudo service apache2 restart
    SHELL
 end
