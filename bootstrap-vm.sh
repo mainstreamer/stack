@@ -5,11 +5,15 @@ printf '\e[0;31m%s\e[0m \n\r' 'Are you inside a virtual machine ?'
 read -n 1 x
 if [ "$x" = "y" ] || [ "$x" == "Y" ]; then  
 	printf '\rpreparational operations in progress \n\rplease wait...\n\r'
-	sudo apt install 	
-	sudo cp vmfiles/vhost.vm.cfg /etc/apache2/sites-available/000-default.conf
-	sudo cp vmfiles/apache2.conf.vm.cfg /etc/apache2/apache2.conf
-	sudo apt install -y libapache2-mod-php7.0
-	sudo service apache2 restart
+	# sudo apt install
+	# sudo mkdir -p /usr/local/bin
+	# sudo curl -LsS https://symfony.com/installer -o /usr/local/bin/symfony
+	# sudo chmod a+x /usr/local/bin/symfony 	
+	# sudo cp vmfiles/vhost.vm.cfg /etc/apache2/sites-available/000-default.conf
+	# sudo cp vmfiles/apache2.conf.vm.cfg /etc/apache2/apache2.conf
+	# sudo apt install -y libapache2-mod-php7.0
+	# sudo service apache2 restart
+	
 printf '\e[0;32m%s\e[0m\n' 'Done'
 else
     printf '\rBoot your VM and come again!\n\n'

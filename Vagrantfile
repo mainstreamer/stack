@@ -77,14 +77,16 @@ Vagrant.configure("2") do |config|
   
   config.vm.provision "shell", inline: <<-SHELL
    sudo apt update
-   sudo apt install -y apache2
-   sudo a2enmod rewrite 
+   sudo apt install -y nginx
+   sudo apt install -y unison
+   sudo apt install -y npm
+   #sudo a2enmod rewrite 
    sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password root'
    sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password root'
    sudo apt install -y mysql-server
-   sudo apt install -y php7.0 php7.0-gd php7.0-mysql php7.0-xml
+   sudo apt install -y php7.0 php7.0-gd php7.0-mysql php7.0-xml php7.0-mbstring php7.0-zip
    sudo apt install -y composer
-   sudo apt install -y libapache2-mod-php7.0
-   sudo service apache2 restart
+   sudo apt install -y libapache2-mod-php7.0 # for mbstring ext
+   #sudo service apache2 restart
    SHELL
 end
