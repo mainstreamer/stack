@@ -28,22 +28,22 @@ Clone repo:
 
 Cd into project folder and initialize virtual machine:
 
-    *vagrant up*
+    **vagrant up**
 
 Ssh into your virtual machine:
 
-    *vagrant ssh*
+    **vagrant ssh**
 
 Go to project folder inside your VM
 
-    *cd /vagrant/*
+    **cd /vagrant/**
 
 Run bootstrap script:
 
-    *sudo ./bootstrap-vm.sh*
+    **sudo ./bootstrap-vm.sh**
 
 Install project dependencies
 
-    *composer install*
+    **composer install**
 
 Done :sunglasses: - go check to http://192.168.168.168 or http://localhost:8888
