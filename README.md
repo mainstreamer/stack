@@ -40,7 +40,7 @@ Go to project folder inside your VM
 
 Run bootstrap script:
 
-    run ./bootstrap-vm.sh
+    sudo ./bootstrap-vm.sh
 
 Install project dependencies
 
