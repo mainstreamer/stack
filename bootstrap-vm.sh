@@ -8,7 +8,7 @@ if [ "$x" = "y" ] || [ "$x" == "Y" ]; then
 	sudo cp /vagrant/vmfiles/default /etc/nginx/sites-available/default
 	sudo service nginx restart
 	sudo service php7.0-fpm restart
-	sudo npm install grunt
+	sudo npm install gulp
 		printf '\e[0;32m%s\e[0m\n' 'Done'
 else
     printf '\rBoot your VM and come again!\n\n'
