@@ -20,7 +20,7 @@
 - unison
 - vagrant
 
-#### Installation:
+### Installation:
 
 Clone repo:
 
@@ -28,22 +28,22 @@ Clone repo:
 
 Cd into project folder and initialize virtual machine:
 
-    __vagrant__ __up__
+    vagrant up
 
 Ssh into your virtual machine:
 
-    __vagrant__ __ssh__
+    vagrant ssh
 
 Go to project folder inside your VM
 
-    __cd__ __/vagrant/__
+    cd /vagrant/
 
 Run bootstrap script:
 
-    __sudo__ __./bootstrap-vm.sh__
+    sudo ./bootstrap-vm.sh
 
 Install project dependencies
 
-    __composer__ __install__
+    composer install
 
 Done :sunglasses: - go check to http://192.168.168.168 or http://localhost:8888
