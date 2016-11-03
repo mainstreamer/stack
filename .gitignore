@@ -9,6 +9,8 @@
 
 # PHP Storm
 /.idea/
+# Npm modules
+/node_modules/
 
 # Cache, session files and logs (Symfony3)
 /var/cache/*
@@ -49,3 +51,5 @@
 
 # Backup entities generated with doctrine:generate:entities command
 */Entity/*~
+
+tests/_output/*
