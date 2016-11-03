@@ -1,6 +1,6 @@
 # stack
 
-### Access
+### Access:
 - http://192.168.168.168 or http://localhost:8888
 - Mysql server (user : root  pwd : root)
 - ssh ubuntu@localhost:2222 [private key : .vagrant/machines/default/virtualbox/private_key]
@@ -21,7 +21,7 @@
 - unison
 - vagrant
 
-### Installation:
+## Installation:
 
 Clone repo:
 
