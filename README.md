@@ -3,7 +3,7 @@
 ##### Access
 - http://192.168.168.168 or http://localhost:8888
 - Mysql server (user : root  pwd : root)
-- ssh ubuntu@localhost:2222 [private key : .vagrant/machines/default/virtualbox/privat_key] or
+- ssh ubuntu@localhost:2222 [private key : .vagrant/machines/default/virtualbox/privat_key]
 
 ##### Preinstalled inside:
 - ubuntu 16.04
@@ -42,8 +42,8 @@ Run bootstrap script:
 
     run ./bootstrap-vm.sh
 
-and then every time you need to pull changes from your guest back to your host machine run
+Install project dependencies
 
     composer install
 
-Done :sunglasses:
+Done :sunglasses: - go check to http://192.168.168.168 or http://localhost:8888
