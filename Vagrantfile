@@ -87,6 +87,5 @@ Vagrant.configure("2") do |config|
    sudo apt install -y composer
    sudo apt install -y libapache2-mod-php7.0 # for mbstring ext
    sudo apt install -y nfs-kernel-server
-   sudo npm install grunt
    SHELL
 end
