@@ -13,7 +13,6 @@
 - unison
 - composer
 - symfony 3.1
-
 - npm
 - gulp
 
