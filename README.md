@@ -8,6 +8,8 @@
 - ubuntu 16.04
 - php7.0
 - MySQL 5.7
+-    user: root
+-    pwd: root
 - unison
 - nginx
 - npm

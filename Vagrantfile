@@ -80,7 +80,6 @@ Vagrant.configure("2") do |config|
    sudo apt install -y nginx
    sudo apt install -y unison
    sudo apt install -y npm
-   #sudo a2enmod rewrite 
    sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password root'
    sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password root'
    sudo apt install -y mysql-server
@@ -88,6 +87,6 @@ Vagrant.configure("2") do |config|
    sudo apt install -y composer
    sudo apt install -y libapache2-mod-php7.0 # for mbstring ext
    sudo apt install -y nfs-kernel-server
-   #sudo service apache2 restart
+   sudo npm install grunt
    SHELL
 end

@@ -1,1 +1,1 @@
-{"nfs":{"/vagrant":{"type":"nfs","rsyn_exclude":".git/","guestpath":"/vagrant","hostpath":"/Users/slight/Projects/npv-stack","disabled":false,"__vagrantfile":true,"map_uid":501,"map_gid":20,"nfs_udp":true,"nfs_version":3,"uuid":"595622239"}}}
+{"nfs":{"/vagrant":{"type":"nfs","rsyn_exclude":".git/","guestpath":"/vagrant","hostpath":"/Users/slight/Projects/stack","disabled":false,"__vagrantfile":true,"map_uid":501,"map_gid":20,"nfs_udp":true,"nfs_version":3,"uuid":"3445329745"}}}
