@@ -7,14 +7,15 @@
 
 ### Preinstalled inside:
 - ubuntu 16.04
-- php7.0
+- nginx
+- php7.0.8 (fpm)
 - MySQL 5.7
 - unison
-- nginx
-- npm
-- grunt
 - composer
 - symfony 3.1
+
+- npm
+- gulp
 
 #### Requirements:
 - unison
