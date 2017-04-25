@@ -7,7 +7,7 @@ if [ "$x" = "y" ] || [ "$x" == "Y" ]; then
 	printf '\rpreparational operations in progress \n\rplease wait...\n\r'
 	sudo cp /vagrant/vmfiles/default /etc/nginx/sites-available/default
 	sudo service nginx restart
-	sudo service php7.0-fpm restart
+	sudo service php7.1-fpm restart
 	sudo npm install gulp
 		printf '\e[0;32m%s\e[0m\n' 'Done'
 else

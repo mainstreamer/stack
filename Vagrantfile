@@ -45,13 +45,13 @@ Vagrant.configure("2") do |config|
   # backing providers for Vagrant. These expose provider-specific options.
   # Example for VirtualBox:
   #
-  # config.vm.provider "virtualbox" do |vb|
+  config.vm.provider "virtualbox" do |vb|
   #   # Display the VirtualBox GUI when booting the machine
   #   vb.gui = true
   #
   #   # Customize the amount of memory on the VM:
-  #   vb.memory = "1024"
-  # end
+    vb.memory = "2048"
+  end
   #
   # View the documentation for the provider you are using for more
   # information on available options.
@@ -64,7 +64,7 @@ Vagrant.configure("2") do |config|
   # end
   config.vm.synced_folder ".", "/vagrant", type: "nfs",
   #rsync__exclude: ".git/ safeUploads/ code/psr0/ code/web/library livedatabase.sql",
-  rsyn_exclude: ".git/"
+  rsyn_exclude: ".git/, /vagrant/var/sessions"
   #rsync__auto: true
 
   # Enable provisioning with a shell script. Additional provisioners such as
@@ -74,8 +74,11 @@ Vagrant.configure("2") do |config|
   #   apt-get update
   #   apt-get install -y apache2
   # SHELL
-  
+
   config.vm.provision "shell", inline: <<-SHELL
+  sudo add-apt-repository ppa:ondrej/php
+  sudo apt-get update
+  # sudo apt-get install php7.1
    sudo apt update
    sudo apt install -y nginx
    sudo apt install -y unison
@@ -83,9 +86,10 @@ Vagrant.configure("2") do |config|
    sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password root'
    sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password root'
    sudo apt install -y mysql-server
-   sudo apt install -y php7.0 php7.0-gd php7.0-mysql php7.0-xml php7.0-mbstring php7.0-zip php7.0-curl
+  #  sudo apt install -y php7.0 php7.0-gd php7.0-mysql php7.0-xml php7.0-mbstring php7.0-zip php7.0-curl
+   sudo apt-get install -y php7.1 php7.1-gd php7.1-mysql php7.1-xml php7.1-mbstring php7.1-zip php7.1-curl php7.1-fpm
    sudo apt install -y composer
-   sudo apt install -y libapache2-mod-php7.0 # for mbstring ext
+   sudo apt install -y libapache2-mod-php7.1 # for mbstring ext
    sudo apt install -y nfs-kernel-server
    SHELL
 end
