@@ -1,26 +1,24 @@
-# stack
+## stack
 
-### Access:
+#### Access:
 - http://192.168.168.168 or http://localhost:8888
 - Mysql server (user : root  pwd : root)
 - ssh ubuntu@localhost:2222 [private key : .vagrant/machines/default/virtualbox/private_key]
 
-### Preinstalled inside:
+#### Preinstalled inside:
 - ubuntu 16.04
-- nginx
-- php7.0.8 (fpm)
-- MySQL 5.7
-- unison
-- composer
-- symfony 3.1
-- npm
+- nginx 1.10.0
+- php 7.1.4 (fpm)
+- MySQL 5.7.17
+- Composer 1.0.0
+- Symfony 3.2.7
+- npm 3.5.2
 - gulp
 
 #### Requirements:
-- unison
 - vagrant
 
-## Installation:
+### Installation:
 
 Clone repo:
 
