@@ -62,7 +62,7 @@ Vagrant.configure("2") do |config|
   # config.push.define "atlas" do |push|
   #   push.app = "YOUR_ATLAS_USERNAME/YOUR_APPLICATION_NAME"
   # end
-  config.vm.synced_folder ".", "/vagrant", type: "nfs",
+  config.vm.synced_folder ".", "/vagrant", type: "nfs"
   #rsync__exclude: ".git/ safeUploads/ code/psr0/ code/web/library livedatabase.sql",
   #rsyn_exclude: ".git/, /vagrant/var/sessions"
   #rsync__auto: true
