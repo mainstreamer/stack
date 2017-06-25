@@ -89,5 +89,7 @@ Vagrant.configure("2") do |config|
    sudo apt install -y composer
    sudo apt install -y libapache2-mod-php7.1 # for mbstring ext
    sudo apt install -y nfs-kernel-server
+
+   echo "\n\ncd /vagrant" >> /home/ubuntu/.bashrc
    SHELL
 end
