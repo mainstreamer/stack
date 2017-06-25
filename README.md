@@ -32,10 +32,6 @@ Ssh into your virtual machine:
 
     vagrant ssh
 
-Go to project folder inside your VM
-
-    cd /vagrant/
-
 Run bootstrap script:
 
     sudo ./bootstrap-vm.sh
