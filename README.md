@@ -22,7 +22,7 @@
 
 Clone repo:
 
-    git@github.com:honey-pot/stack.git
+    git@github.com:mainstreamer/stack.git
 
 Cd into project folder and initialize virtual machine:
 
