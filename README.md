@@ -22,7 +22,7 @@
 
 Clone repo:
 
-    git clone git@github.com:mainstreamer/stack.git
+    git@github.com:honey-pot/stack.git
 
 Cd into project folder and initialize virtual machine:
 
@@ -31,10 +31,6 @@ Cd into project folder and initialize virtual machine:
 Ssh into your virtual machine:
 
     vagrant ssh
-
-Go to project folder inside your VM
-
-    cd /vagrant/
 
 Run bootstrap script:
 
